@@ -1,0 +1,21 @@
+# LangGraph and LangChain
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-anthropic>=0.3.0
+
+# LangGraph Checkpointers
+langgraph-checkpoint-sqlite>=1.0.0
+
+# PowerPoint processing
+python-pptx>=0.6.0
+pillow>=10.0.0
+
+# Document conversion
+markitdown
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: PostgreSQL for production (not needed for testing)
+# langgraph-checkpoint-postgres>=1.0.0
+# psycopg2-binary>=2.9.0
