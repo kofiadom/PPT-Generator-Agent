@@ -15,6 +15,7 @@ from workflow.state import (
     add_message,
     add_error,
     mark_stage_complete,
+    start_stage_timing,
 )
 from workflow.utils import (
     log_stage_start,
@@ -39,6 +40,7 @@ def _get_source_filename(state: WorkflowState) -> str:
 # Stage 0A: Template Intake
 def stage0a_template_intake(state: WorkflowState) -> Dict[str, Any]:
     """Stage 0A: Template Intake node."""
+    stage_start = start_stage_timing("stage0a_template_intake")
     log_stage_start("stage0a_template_intake: Template Intake")
     
     try:
@@ -65,8 +67,12 @@ def stage0a_template_intake(state: WorkflowState) -> Dict[str, Any]:
         
         log_stage_complete("stage0a_template_intake: Template Intake")
         
-        # Update state
-        update = mark_stage_complete("stage0a_template_intake")
+        # Update state with timing
+        update = mark_stage_complete("stage0a_template_intake", stage_start)
+        
+        # Set workflow start time if this is first stage
+        if not state.get("started_at"):
+            update["started_at"] = stage_start
         update.update(add_message(state, "system", "✅ Completed Template Intake"))
         update["artifacts"] = {
             **state.get("artifacts", {}),
@@ -87,6 +93,7 @@ def stage0a_template_intake(state: WorkflowState) -> Dict[str, Any]:
 # Stage 0B: Source Intake
 def stage0b_source_intake(state: WorkflowState) -> Dict[str, Any]:
     """Stage 0B: Source Intake node."""
+    stage_start = start_stage_timing("stage0b_source_intake")
     log_stage_start("stage0b_source_intake: Source Intake")
     
     try:
@@ -122,8 +129,8 @@ def stage0b_source_intake(state: WorkflowState) -> Dict[str, Any]:
         
         log_stage_complete("stage0b_source_intake: Source Intake")
         
-        # Update state
-        update = mark_stage_complete("stage0b_source_intake")
+        # Update state with timing
+        update = mark_stage_complete("stage0b_source_intake", stage_start)
         update.update(add_message(state, "system", "✅ Completed Source Intake"))
         update["artifacts"] = {
             **state.get("artifacts", {}),
@@ -144,6 +151,7 @@ def stage0b_source_intake(state: WorkflowState) -> Dict[str, Any]:
 # Stage 1: Extract Template
 def stage1_extract(state: WorkflowState) -> Dict[str, Any]:
     """Stage 1: Extract Template Content node."""
+    stage_start = start_stage_timing("stage1_extract")
     log_stage_start("stage1_extract: Extract Template Content")
     
     try:
@@ -153,35 +161,23 @@ def stage1_extract(state: WorkflowState) -> Dict[str, Any]:
         
         # Extract to markdown
         content_path = workspace / "stage1-extract" / "template-content.md"
-        cmd1 = [sys.executable, "scripts/convert_to_markdown.py", str(template_path), str(content_path)]
+        cmd = [sys.executable, "scripts/convert_to_markdown.py", str(template_path), str(content_path)]
         
-        print(f"  Executing: {' '.join(cmd1)}")
-        result = subprocess.run(cmd1, capture_output=True, text=True)
+        print(f"  Executing: {' '.join(cmd)}")
+        result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:
-            raise subprocess.CalledProcessError(result.returncode, cmd1, stderr=result.stderr or result.stdout)
-        if result.stdout:
-            print(f"  Output: {result.stdout.strip()}")
-        
-        # Create thumbnail
-        thumbnail_prefix = workspace / "stage1-extract" / "template-thumbnail"
-        cmd2 = [sys.executable, "scripts/thumbnail.py", str(template_path), str(thumbnail_prefix)]
-        
-        print(f"  Executing: {' '.join(cmd2)}")
-        result = subprocess.run(cmd2, capture_output=True, text=True)
-        if result.returncode != 0:
-            raise subprocess.CalledProcessError(result.returncode, cmd2, stderr=result.stderr or result.stdout)
+            raise subprocess.CalledProcessError(result.returncode, cmd, stderr=result.stderr or result.stdout)
         if result.stdout:
             print(f"  Output: {result.stdout.strip()}")
         
         log_stage_complete("stage1_extract: Extract Template Content")
         
-        # Update state
-        update = mark_stage_complete("stage1_extract")
+        # Update state with timing
+        update = mark_stage_complete("stage1_extract", stage_start)
         update.update(add_message(state, "system", "✅ Completed Extract Template Content"))
         update["artifacts"] = {
             **state.get("artifacts", {}),
-            "template_content": str(content_path),
-            "template_thumbnail": str(thumbnail_prefix) + ".jpg"
+            "template_content": str(content_path)
         }
         
         return update
@@ -197,6 +193,7 @@ def stage1_extract(state: WorkflowState) -> Dict[str, Any]:
 # Stage 4: Rearrange Slides
 def stage4_rearrange(state: WorkflowState) -> Dict[str, Any]:
     """Stage 4: Rearrange Slides node."""
+    stage_start = start_stage_timing("stage4_rearrange")
     log_stage_start("stage4_rearrange: Rearrange Slides")
     
     try:
@@ -207,35 +204,23 @@ def stage4_rearrange(state: WorkflowState) -> Dict[str, Any]:
         mapping_path = workspace / "stage3-outline" / "template-mapping.json"
         
         # Rearrange slides
-        cmd1 = [sys.executable, "scripts/rearrange_from_mapping.py", str(template_path), str(working_path), str(mapping_path)]
+        cmd = [sys.executable, "scripts/rearrange_from_mapping.py", str(template_path), str(working_path), str(mapping_path)]
         
-        print(f"  Executing: {' '.join(cmd1)}")
-        result = subprocess.run(cmd1, capture_output=True, text=True)
+        print(f"  Executing: {' '.join(cmd)}")
+        result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:
-            raise subprocess.CalledProcessError(result.returncode, cmd1, stderr=result.stderr or result.stdout)
-        if result.stdout:
-            print(f"  Output: {result.stdout.strip()}")
-        
-        # Create thumbnail
-        thumbnail_prefix = workspace / "stage4-rearrange" / "rearranged-slides"
-        cmd2 = [sys.executable, "scripts/thumbnail.py", str(working_path), str(thumbnail_prefix)]
-        
-        print(f"  Executing: {' '.join(cmd2)}")
-        result = subprocess.run(cmd2, capture_output=True, text=True)
-        if result.returncode != 0:
-            raise subprocess.CalledProcessError(result.returncode, cmd2, stderr=result.stderr or result.stdout)
+            raise subprocess.CalledProcessError(result.returncode, cmd, stderr=result.stderr or result.stdout)
         if result.stdout:
             print(f"  Output: {result.stdout.strip()}")
         
         log_stage_complete("stage4_rearrange: Rearrange Slides")
         
-        # Update state
-        update = mark_stage_complete("stage4_rearrange")
+        # Update state with timing
+        update = mark_stage_complete("stage4_rearrange", stage_start)
         update.update(add_message(state, "system", "✅ Completed Rearrange Slides"))
         update["artifacts"] = {
             **state.get("artifacts", {}),
-            "working_pptx": str(working_path),
-            "rearranged_thumbnail": str(thumbnail_prefix) + ".jpg"
+            "working_pptx": str(working_path)
         }
         
         return update
@@ -251,6 +236,7 @@ def stage4_rearrange(state: WorkflowState) -> Dict[str, Any]:
 # Stage 5: Text Inventory
 def stage5_inventory(state: WorkflowState) -> Dict[str, Any]:
     """Stage 5: Extract Text Inventory node."""
+    stage_start = start_stage_timing("stage5_inventory")
     log_stage_start("stage5_inventory: Extract Text Inventory")
     
     try:
@@ -270,8 +256,8 @@ def stage5_inventory(state: WorkflowState) -> Dict[str, Any]:
         
         log_stage_complete("stage5_inventory: Extract Text Inventory")
         
-        # Update state
-        update = mark_stage_complete("stage5_inventory")
+        # Update state with timing
+        update = mark_stage_complete("stage5_inventory", stage_start)
         update.update(add_message(state, "system", "✅ Completed Extract Text Inventory"))
         update["artifacts"] = {
             **state.get("artifacts", {}),
@@ -291,6 +277,7 @@ def stage5_inventory(state: WorkflowState) -> Dict[str, Any]:
 # Stage 7: Apply Replacements & Finalize
 def stage7_finalize(state: WorkflowState) -> Dict[str, Any]:
     """Stage 7: Apply Replacements & Finalize node."""
+    stage_start = start_stage_timing("stage7_finalize")
     log_stage_start("stage7_finalize: Apply Replacements & Finalize")
     
     try:
@@ -298,38 +285,36 @@ def stage7_finalize(state: WorkflowState) -> Dict[str, Any]:
         working_path = workspace / "stage4-rearrange" / "working.pptx"
         replacement_path = workspace / "stage6-replacement" / "replacement-text.json"
         final_path = workspace / "stage7-final" / f"{state['output_name']}.pptx"
-        
         # Apply replacements
-        cmd1 = [sys.executable, "scripts/replace.py", str(working_path), str(replacement_path), str(final_path)]
+        cmd = [sys.executable, "scripts/replace.py", str(working_path), str(replacement_path), str(final_path)]
         
-        print(f"  Executing: {' '.join(cmd1)}")
-        result = subprocess.run(cmd1, capture_output=True, text=True)
+        print(f"  Executing: {' '.join(cmd)}")
+        result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:
-            raise subprocess.CalledProcessError(result.returncode, cmd1, stderr=result.stderr or result.stdout)
-        if result.stdout:
-            print(f"  Output: {result.stdout.strip()}")
-        
-        # Create final thumbnail
-        thumbnail_prefix = workspace / "stage7-final" / "final-presentation"
-        cmd2 = [sys.executable, "scripts/thumbnail.py", str(final_path), str(thumbnail_prefix)]
-        
-        print(f"  Executing: {' '.join(cmd2)}")
-        result = subprocess.run(cmd2, capture_output=True, text=True)
-        if result.returncode != 0:
-            raise subprocess.CalledProcessError(result.returncode, cmd2, stderr=result.stderr or result.stdout)
+            raise subprocess.CalledProcessError(result.returncode, cmd, stderr=result.stderr or result.stdout)
         if result.stdout:
             print(f"  Output: {result.stdout.strip()}")
         
         log_stage_complete("stage7_finalize: Apply Replacements & Finalize")
         
-        # Update state - mark workflow as completed
-        update = mark_stage_complete("stage7_finalize")
+        # Update state - mark workflow as completed with timing
+        from datetime import datetime
+        from workflow.state import get_total_duration
+        
+        update = mark_stage_complete("stage7_finalize", stage_start)
         update["status"] = "completed"  # Mark entire workflow as complete
+        update["completed_at"] = datetime.utcnow().isoformat()
+        
+        # Calculate total duration
+        total_duration = get_total_duration({**state, **update})
+        if total_duration:
+            update["total_duration_seconds"] = total_duration
+            print(f"  Total workflow duration: {total_duration:.2f} seconds")
+        
         update.update(add_message(state, "system", f"✅ Workflow Complete! Final presentation: {final_path}"))
         update["artifacts"] = {
             **state.get("artifacts", {}),
-            "final_pptx": str(final_path),
-            "final_thumbnail": str(thumbnail_prefix) + ".jpg"
+            "final_pptx": str(final_path)
         }
         
         return update

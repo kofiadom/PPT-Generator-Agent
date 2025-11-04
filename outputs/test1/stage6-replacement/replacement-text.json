@@ -1,0 +1,805 @@
+{
+  "slide-0": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Enterprise Payroll Transformation",
+          "alignment": "CENTER",
+          "font_size": 48.0,
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Prepared for Acme Manufacturing Ltd. | November 2, 2025",
+          "alignment": "CENTER",
+          "font_size": 21.0
+        }
+      ]
+    }
+  },
+  "slide-1": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Executive Summary",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Acme Manufacturing operates across 12 countries with fragmented payroll, 96.2% accuracy, and a 7-day close. This proposal consolidates payroll onto a single global platform with automated controls and executive analytics.",
+          "space_after": 16.0
+        },
+        {
+          "text": "Expected outcomes: 99.8% accuracy, 2-day close, 75% ticket reduction, and ROI within 12 months through a 6-month phased deployment with rigorous change management.",
+          "space_after": 16.0
+        },
+        {
+          "text": "The unified solution will eliminate manual touchpoints, provide real-time compliance visibility, and deliver executive dashboards for strategic decision-making.",
+          "space_after": 16.0
+        }
+      ]
+    }
+  },
+  "slide-2": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Understanding the Problem",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Fragmented Providers",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Manual Data Prep",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Limited Visibility",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "12 vendors with 7 file formats and divergent calendars create high rework and penalty risk.",
+          "font_size": 16.0
+        },
+        {
+          "text": "2 missed tax filings in FY2025; 14 manual handoffs per cycle.",
+          "space_before": 16.0,
+          "space_after": 16.0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "22 hours per cycle on spreadsheet validations; 3% variance caught post-pay.",
+          "font_size": 16.0
+        },
+        {
+          "text": "Delayed close and inconsistent audit trail",
+          "bullet": true,
+          "level": 0,
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Time-intensive retro calculations",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "No unified dashboards; CFO receives consolidated KPIs 10 days after month-end, slowing decisions and forecasting.",
+          "space_after": 16.0,
+          "font_size": 16.0
+        }
+      ]
+    }
+  },
+  "slide-3": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Project Objective:",
+          "font_size": 42.0,
+          "bold": true
+        },
+        {
+          "text": "By June 30, 2026, achieve 99.8% accuracy, ≤2-day close, ≥75% ticket reduction, and 18% cost decrease across 12 countries",
+          "font_size": 42.0
+        }
+      ]
+    }
+  },
+  "slide-4": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Understanding the Market",
+          "alignment": "CENTER",
+          "font_size": 36.0,
+          "bold": true
+        }
+      ]
+    }
+  },
+  "slide-5": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "5 key stakeholder groups: VP People Ops (economic buyer), Payroll Managers (country influencers), Finance Controller (co-sponsor), Plant Managers, and 5,400 employees across 12 countries."
+        },
+        {
+          "text": "The Competition:",
+          "space_before": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Legacy Vendor A: Deep local expertise but weak integrations",
+          "bullet": true,
+          "level": 0
+        },
+        {
+          "text": "In-Country Networks: Fragmented contracts and processes",
+          "bullet": true,
+          "level": 0
+        },
+        {
+          "text": "DIY ERP: Complex rollouts and slow country activation",
+          "bullet": true,
+          "level": 0
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Target Audience",
+          "alignment": "CENTER",
+          "font_size": 42.0,
+          "bold": true
+        }
+      ]
+    }
+  },
+  "slide-6": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Market Trends",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Consolidation to Global Platforms",
+          "font_size": 21.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": ">40% of mid-market globals plan consolidation by 2027, driven by need for standard controls and contract simplicity.",
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Client Implications:",
+          "space_before": 16.0,
+          "font_size": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Leverage scale and reduce error pathways",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Single contract across 12 countries with unified processes",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Real-Time Pay & Self-Service Analytics",
+          "font_size": 21.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Adoption accelerating as finance seeks near-real-time accruals and employees demand transparency.",
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Client Implications:",
+          "space_before": 16.0,
+          "font_size": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Deploy manager and employee dashboards",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Enable pre-pay variance alerts and real-time compliance monitoring",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    }
+  },
+  "slide-7": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Trend Analysis",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Errors",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_2",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Countries",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_2",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Key Findings",
+          "font_size": 21.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Global consolidation reduces errors from 7.5 to 2.0 per 1,000 payslips. Automation of pre-pay checks materially shortens close time and cuts tickets.",
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Client Implications:",
+          "space_before": 16.0,
+          "font_size": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Acme can achieve 99.8% accuracy through consolidation",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Self-service adoption from 35% to 80% increases confidence",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "7.5",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "6.1",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "5.4",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "6",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "4.2",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "9",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "2.0",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "35%",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "48%",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "57%",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "2022",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "2023",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "2024",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "2025",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    }
+  },
+  "slide-8": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Proposed Deliverables",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Current-State Assessment",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0,
+          "bold": true
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Process maps and data quality baseline",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Risk/controls review across 12 countries",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Business Case & Roadmap",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0,
+          "bold": true
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "ROI model with KPIs and targets",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "12-country rollout plan with phasing",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Global Payroll Blueprint",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0,
+          "bold": true
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Standard operating model and integrations",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Control framework with security sign-off",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Implementation Plan & Playbooks",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0,
+          "bold": true
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Cutover, testing, and change management",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Country activation runbooks",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    }
+  },
+  "slide-9": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Implementation Timeline",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Deployment (Dec 2025 - Jan 2026)",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "In-Production Services (Feb - Mar 2026)",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Global Go-Live (Mar - Apr 2026)",
+          "theme_color": "DARK_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Advanced Projects (May - Jun 2026)",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Analytics dashboards and pre-pay automation",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Earned wage access (EWA) pilots",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-10": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "The Team",
+          "alignment": "CENTER",
+          "theme_color": "LIGHT_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Alex Morgan, Engagement Lead",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Noura Haddad, Solution Architect",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Sara Kim, Program Manager",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Mei Lin, Change Manager",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1",
+          "bold": true
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "15+ years in payroll transformation. Sponsor alignment and overall delivery. 40% allocation, London.",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Global payroll design and integrations expert. Platform design, security & SSO. 25% allocation, Tel Aviv.",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "PMO and risk management specialist. Plan, RAID, status & governance. 40% allocation, New York.",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Change, communications, and training lead. Stakeholder plan and training assets. 25% allocation, Singapore.",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    }
+  }
+}

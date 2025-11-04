@@ -6,6 +6,11 @@ langchain-anthropic>=0.3.0
 # LangGraph Checkpointers
 langgraph-checkpoint-sqlite>=1.0.0
 
+# FastAPI
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.9
+
 # PowerPoint processing
 python-pptx>=0.6.0
 pillow>=10.0.0

@@ -24,6 +24,14 @@ class ErrorRecord(TypedDict):
     timestamp: str
 
 
+class StageTimingRecord(TypedDict):
+    """Timing record for a stage."""
+    stage: str
+    start_time: str
+    end_time: Optional[str]
+    duration_seconds: Optional[float]
+
+
 class WorkflowState(TypedDict):
     """
     Complete state for PPTX generation workflow.
@@ -64,12 +72,18 @@ class WorkflowState(TypedDict):
     # Error tracking (with reducer for appending)
     errors: Annotated[List[ErrorRecord], add]
     
+    # Timing tracking (with reducer for appending)
+    stage_timings: Annotated[List[StageTimingRecord], add]
+    
     # Workspace
     workspace_dir: str
     
     # Timestamps
     created_at: str
     updated_at: str
+    started_at: Optional[str]  # When first stage started
+    completed_at: Optional[str]  # When workflow completed
+    total_duration_seconds: Optional[float]  # Total execution time
 
 
 class Context(TypedDict, total=False):
@@ -160,9 +174,13 @@ def create_initial_state(
         text_inventory=None,
         replacement_text=None,
         errors=[],
+        stage_timings=[],
         workspace_dir=workspace_dir,
         created_at=now,
         updated_at=now,
+        started_at=None,
+        completed_at=None,
+        total_duration_seconds=None,
     )
 
 
@@ -281,19 +299,69 @@ def add_error(state: WorkflowState, stage: str, error: str) -> Dict[str, Any]:
     }
 
 
-def mark_stage_complete(stage: str) -> Dict[str, Any]:
+def mark_stage_complete(stage: str, start_time: str) -> Dict[str, Any]:
     """
-    Helper to mark a stage as complete.
+    Helper to mark a stage as complete with timing.
+    
+    Args:
+        stage: Stage identifier
+        start_time: ISO format timestamp when stage started
+    
+    Returns:
+        State update dict
+    """
+    end_time = datetime.utcnow()
+    start_dt = datetime.fromisoformat(start_time)
+    duration = (end_time - start_dt).total_seconds()
+    
+    return {
+        "completed_stages": [stage],
+        "current_stage": stage,
+        "status": "in_progress",
+        "updated_at": end_time.isoformat(),
+        "stage_timings": [StageTimingRecord(
+            stage=stage,
+            start_time=start_time,
+            end_time=end_time.isoformat(),
+            duration_seconds=duration
+        )]
+    }
+
+
+def start_stage_timing(stage: str) -> str:
+    """
+    Get current timestamp for stage start.
     
     Args:
         stage: Stage identifier
     
     Returns:
-        State update dict
+        ISO format timestamp
     """
-    return {
-        "completed_stages": [stage],
-        "current_stage": stage,
-        "status": "in_progress",
-        "updated_at": datetime.utcnow().isoformat(),
-    }
+    return datetime.utcnow().isoformat()
+
+
+def get_total_duration(state: WorkflowState) -> Optional[float]:
+    """
+    Calculate total workflow duration from start to completion.
+    
+    Args:
+        state: Current workflow state
+    
+    Returns:
+        Total duration in seconds, or None if not started/completed
+    """
+    started_at = state.get("started_at")
+    completed_at = state.get("completed_at")
+    
+    if not started_at or not completed_at:
+        # If not completed, sum stage durations so far
+        if state.get("stage_timings"):
+            return sum(t.get("duration_seconds", 0) for t in state["stage_timings"])
+        return None
+    
+    # Calculate from start to completion timestamps
+    from datetime import datetime
+    start_dt = datetime.fromisoformat(started_at)
+    end_dt = datetime.fromisoformat(completed_at)
+    return (end_dt - start_dt).total_seconds()

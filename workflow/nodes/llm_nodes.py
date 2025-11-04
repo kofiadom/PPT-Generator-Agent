@@ -18,6 +18,7 @@ from workflow.state import (
     add_message,
     add_error,
     mark_stage_complete,
+    start_stage_timing,
 )
 from workflow.utils import (
     log_stage_start,
@@ -56,6 +57,7 @@ def stage2_analyze(state: WorkflowState) -> Dict[str, Any]:
     
     Uses LLM to analyze template structure and create comprehensive inventory.
     """
+    stage_start = start_stage_timing("stage2_analyze")
     log_stage_start("stage2_analyze: Analyze Template")
     
     try:
@@ -129,8 +131,8 @@ Output ONLY the markdown content, no additional commentary."""
         print(f"  Created inventory: {inventory_path}")
         log_stage_complete("stage2_analyze: Analyze Template")
         
-        # Update state
-        update = mark_stage_complete("stage2_analyze")
+        # Update state with timing
+        update = mark_stage_complete("stage2_analyze", stage_start)
         update.update(add_message(state, "system", "✅ Completed Analyze Template"))
         update["template_inventory"] = inventory_content
         update["artifacts"] = {
@@ -155,6 +157,7 @@ def stage3_outline(state: WorkflowState) -> Dict[str, Any]:
     
     Uses LLM to parse content and create presentation outline with slide mapping.
     """
+    stage_start = start_stage_timing("stage3_outline")
     log_stage_start("stage3_outline: Create Outline")
     
     try:
@@ -260,8 +263,8 @@ CRITICAL: Ensure the mapping is a valid JSON array of integers."""
         print(f"  Slide mapping: {slide_mapping}")
         log_stage_complete("stage3_outline: Create Outline")
         
-        # Update state
-        update = mark_stage_complete("stage3_outline")
+        # Update state with timing
+        update = mark_stage_complete("stage3_outline", stage_start)
         update.update(add_message(state, "system", "✅ Completed Create Outline"))
         update["outline"] = outline_content
         update["slide_mapping"] = slide_mapping
@@ -289,6 +292,7 @@ def stage6_replacements(state: WorkflowState) -> Dict[str, Any]:
     
     Uses LLM to generate formatted replacement text for all slides.
     """
+    stage_start = start_stage_timing("stage6_replacements")
     log_stage_start("stage6_replacements: Generate Replacements")
     
     try:
@@ -420,8 +424,8 @@ IMPORTANT:
         print(f"  Slides: {len(replacement_data)}, Total shapes: {sum(len(v) for v in replacement_data.values())}")
         log_stage_complete("stage6_replacements: Generate Replacements")
         
-        # Update state
-        update = mark_stage_complete("stage6_replacements")
+        # Update state with timing
+        update = mark_stage_complete("stage6_replacements", stage_start)
         update.update(add_message(state, "system", "✅ Completed Generate Replacements"))
         update["replacement_text"] = replacement_data
         update["artifacts"] = {

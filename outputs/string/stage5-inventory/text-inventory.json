@@ -1,0 +1,1311 @@
+{
+  "slide-0": {
+    "shape-0": {
+      "left": 0.73,
+      "top": 1.08,
+      "width": 8.53,
+      "height": 1.89,
+      "placeholder_type": "CENTER_TITLE",
+      "default_font_size": 48.0,
+      "paragraphs": [
+        {
+          "text": "Consulting Proposal",
+          "alignment": "CENTER"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.73,
+      "top": 3.47,
+      "width": 8.53,
+      "height": 0.87,
+      "placeholder_type": "SUBTITLE",
+      "default_font_size": 21.0,
+      "paragraphs": [
+        {
+          "text": "September 4, 20XX",
+          "alignment": "CENTER"
+        }
+      ]
+    }
+  },
+  "slide-1": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Overview"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.26,
+      "width": 9.32,
+      "height": 3.74,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "space_after": 16.0
+        }
+      ]
+    }
+  },
+  "slide-2": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Understanding the problem"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.55,
+      "top": 1.43,
+      "width": 2.73,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Item 1",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 3.71,
+      "top": 1.43,
+      "width": 2.73,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Item 2",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 6.86,
+      "top": 1.43,
+      "width": 2.73,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Item 3",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.56,
+      "top": 2.02,
+      "width": 2.71,
+      "height": 3.06,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "font_size": 16.0
+        },
+        {
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation",
+          "space_before": 16.0,
+          "space_after": 16.0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 3.71,
+      "top": 2.02,
+      "width": 2.71,
+      "height": 3.06,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation",
+          "font_size": 16.0
+        },
+        {
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit",
+          "bullet": true,
+          "level": 0,
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Esse cillum dolore eu fugiat nulla pariatur",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 6.87,
+      "top": 2.02,
+      "width": 2.71,
+      "height": 3.06,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "space_after": 16.0,
+          "font_size": 16.0
+        }
+      ]
+    }
+  },
+  "slide-3": {
+    "shape-0": {
+      "left": 0.54,
+      "top": 0.58,
+      "width": 6.81,
+      "height": 4.47,
+      "placeholder_type": "TITLE",
+      "default_font_size": 48.0,
+      "paragraphs": [
+        {
+          "text": "Project objective:",
+          "font_size": 42.0,
+          "bold": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+          "font_size": 42.0
+        }
+      ]
+    }
+  },
+  "slide-4": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Understanding the problem"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.55,
+      "top": 1.43,
+      "width": 2.73,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Item 1",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 3.71,
+      "top": 1.43,
+      "width": 2.73,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Item 2",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 6.86,
+      "top": 1.43,
+      "width": 2.73,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Item 3",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.56,
+      "top": 2.02,
+      "width": 2.71,
+      "height": 3.06,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "font_size": 16.0
+        },
+        {
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation",
+          "space_before": 16.0,
+          "space_after": 16.0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 3.71,
+      "top": 2.02,
+      "width": 2.71,
+      "height": 3.06,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation",
+          "font_size": 16.0
+        },
+        {
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit",
+          "bullet": true,
+          "level": 0,
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Esse cillum dolore eu fugiat nulla pariatur",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 6.87,
+      "top": 2.02,
+      "width": 2.71,
+      "height": 3.06,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "space_after": 16.0,
+          "font_size": 16.0
+        }
+      ]
+    }
+  },
+  "slide-5": {
+    "shape-0": {
+      "left": 0.73,
+      "top": 2.34,
+      "width": 8.59,
+      "height": 0.94,
+      "placeholder_type": "TITLE",
+      "default_font_size": 36.0,
+      "paragraphs": [
+        {
+          "text": "Understanding the market",
+          "alignment": "CENTER"
+        }
+      ]
+    }
+  },
+  "slide-6": {
+    "shape-0": {
+      "left": 5.4,
+      "top": 0.79,
+      "width": 4.2,
+      "height": 4.04,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+        },
+        {
+          "text": "The competition:",
+          "space_before": 16.0
+        },
+        {
+          "text": "Lorem ipsum",
+          "bullet": true,
+          "level": 0
+        },
+        {
+          "text": "Dolor sit amet",
+          "bullet": true,
+          "level": 0
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.29,
+      "top": 1.9,
+      "width": 4.42,
+      "height": 1.83,
+      "placeholder_type": "TITLE",
+      "default_font_size": 42.0,
+      "paragraphs": [
+        {
+          "text": "Target audience",
+          "alignment": "CENTER"
+        }
+      ]
+    }
+  },
+  "slide-7": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Market trends"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.26,
+      "width": 4.37,
+      "height": 3.74,
+      "placeholder_type": "BODY",
+      "default_font_size": 14.0,
+      "paragraphs": [
+        {
+          "text": "Trend 1",
+          "font_size": 21.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Client Implications:",
+          "space_before": 16.0,
+          "font_size": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Incididunt ut labore et dolore",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 5.28,
+      "top": 1.26,
+      "width": 4.37,
+      "height": 3.74,
+      "placeholder_type": "BODY",
+      "default_font_size": 14.0,
+      "paragraphs": [
+        {
+          "text": "Trend 2",
+          "font_size": 21.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Client Implications:",
+          "space_before": 16.0,
+          "font_size": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Incididunt ut labore et dolore",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    }
+  },
+  "slide-8": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-2": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Trend analysis"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 8.74,
+      "top": 0.28,
+      "width": 0.75,
+      "height": 0.24,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.16
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Item 1",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_2",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 8.74,
+      "top": 0.66,
+      "width": 0.75,
+      "height": 0.24,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.16
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-0": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Item 2",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_2",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 0.34,
+      "top": 1.26,
+      "width": 4.37,
+      "height": 3.74,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Findings",
+          "font_size": 21.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+          "space_before": 16.0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Client Implications:",
+          "space_before": 16.0,
+          "font_size": 16.0,
+          "bold": true
+        },
+        {
+          "text": "Incididunt ut labore et dolore",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        },
+        {
+          "text": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "font_size": 16.0
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 8.07,
+      "top": 1.45,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "39",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 7.15,
+      "top": 2.26,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "29",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 8.07,
+      "top": 1.79,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 7.15,
+      "top": 2.6,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 8.98,
+      "top": 2.43,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "27",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 9.0,
+      "top": 2.8,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "5",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 6.22,
+      "top": 3.0,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "20",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "ACCENT_5",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 6.22,
+      "top": 3.37,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "5",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 8.07,
+      "top": 3.21,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "35",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 6.22,
+      "top": 4.17,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "15",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 7.15,
+      "top": 3.7,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "25",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 9.0,
+      "top": 3.7,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "22",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 6.22,
+      "top": 4.97,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "20XX",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 7.15,
+      "top": 4.97,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "20XX",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 8.07,
+      "top": 4.97,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "20XX",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 9.0,
+      "top": 4.97,
+      "width": 0.75,
+      "height": 0.34,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "20XX",
+          "alignment": "CENTER",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 14.0
+        }
+      ]
+    }
+  },
+  "slide-9": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Proposed deliverables"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.59,
+      "top": 1.37,
+      "width": 2.65,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Deliverable 1",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 3.81,
+      "top": 1.37,
+      "width": 5.59,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 0.59,
+      "top": 2.33,
+      "width": 2.65,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Deliverable 2",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 3.81,
+      "top": 2.33,
+      "width": 5.59,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.59,
+      "top": 3.28,
+      "width": 2.65,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Deliverable 3",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 3.81,
+      "top": 3.29,
+      "width": 5.59,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 0.59,
+      "top": 4.24,
+      "width": 2.65,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Deliverable 4",
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 3.81,
+      "top": 4.24,
+      "width": 5.59,
+      "height": 0.87,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        },
+        {
+          "text": "Sed do eiusmod tempor incididunt ut labore",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    }
+  },
+  "slide-10": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.49,
+      "width": 9.32,
+      "height": 0.63,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Timeline"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.62,
+      "top": 1.91,
+      "width": 2.81,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Deployment",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 3.97,
+      "top": 1.9,
+      "width": 4.89,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "In-production services",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 2.83,
+      "top": 2.55,
+      "width": 2.2,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Global go-live",
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 5.0,
+      "top": 3.18,
+      "width": 2.81,
+      "height": 0.5,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Advanced projects",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 4.92,
+      "top": 3.69,
+      "width": 3.75,
+      "height": 1.1,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Example 1",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Example 2",
+          "bullet": true,
+          "level": 0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-11": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.41,
+      "width": 9.32,
+      "height": 0.8,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "The Team",
+          "alignment": "CENTER",
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.18,
+      "top": 3.4,
+      "width": 2.38,
+      "height": 0.48,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.19
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Wendy Writer, CEO",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.6,
+      "top": 3.4,
+      "width": 2.38,
+      "height": 0.48,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.19
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Ronny Reader, CFO",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 5.01,
+      "top": 3.4,
+      "width": 2.38,
+      "height": 0.48,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.19
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Abby Author, CTO",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 7.43,
+      "top": 3.4,
+      "width": 2.38,
+      "height": 0.48,
+      "placeholder_type": "BODY",
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.19
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Berry Books, CPO",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 17.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.18,
+      "top": 3.98,
+      "width": 2.38,
+      "height": 1.26,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 2.6,
+      "top": 3.98,
+      "width": 2.38,
+      "height": 1.26,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 5.01,
+      "top": 3.98,
+      "width": 2.38,
+      "height": 1.26,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 7.43,
+      "top": 3.98,
+      "width": 2.38,
+      "height": 1.26,
+      "placeholder_type": "BODY",
+      "paragraphs": [
+        {
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          "alignment": "CENTER",
+          "space_after": 16.0,
+          "font_size": 13.0
+        }
+      ]
+    }
+  }
+}
